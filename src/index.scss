@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
-body {
+body, ul, p {
+  font-family: 'Syne', 'Lato', sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

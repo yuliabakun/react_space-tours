@@ -1,0 +1,18 @@
+.explore-tours-button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__text {
+    font-family: 'Lato';
+    font-size: 32px;
+    color: white;
+    text-shadow: black 0px 0px 2px; 
+  }
+}
+
+.explore-tours-button img {
+  margin-left: 10px;
+}

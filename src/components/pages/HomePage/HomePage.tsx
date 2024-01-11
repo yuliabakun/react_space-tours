@@ -1,5 +1,14 @@
+import { Banner } from '../../templates/Banner';
+import './HomePage.scss';
+
 export const HomePage = () => {
-  return(
-    <h1>Home page</h1>
+  return (
+    <>
+      <div className="bg-container" />
+
+      <div className="homepage">
+        <Banner />
+      </div>
+    </>
   );
 };

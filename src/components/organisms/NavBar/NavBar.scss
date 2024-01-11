@@ -1,0 +1,27 @@
+@import '../../../shared/styles/variables.scss';
+
+.navbar {
+  &__list {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+  }
+}
+
+.navlink {
+  text-decoration: none;
+  font-family: 'Lato';
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+
+  &--active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    height: 1px;
+    background-color: $white;
+  }
+}

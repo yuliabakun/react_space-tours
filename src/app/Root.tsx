@@ -9,7 +9,7 @@ import { HomePage } from "../components/pages/HomePage";
 import { FavouritesPage } from "../components/pages/FavouritesPage";
 import { NotFoundPage } from "../components/pages/NotFoundPage";
 
-export const Root = () => {
+const Root = () => {
   return (
     <Router>
       <Routes>
@@ -23,3 +23,5 @@ export const Root = () => {
     </Router>
   );
 };
+
+export default Root;

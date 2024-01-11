@@ -1,0 +1,11 @@
+@import '../../../../shared/styles/variables.scss';
+
+.icon-button {
+  height: 53px;
+  min-width: 53px;
+  cursor: pointer;
+
+  &--active {
+    background-color: $accent-pink;
+  }
+}

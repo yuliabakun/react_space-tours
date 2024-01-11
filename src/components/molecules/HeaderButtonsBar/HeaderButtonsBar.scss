@@ -1,0 +1,11 @@
+.header-bar {
+  display: flex;
+
+  &__icon {
+    margin-right: 10px;
+  }
+
+  &__login {
+    width: 163px;
+  }
+}

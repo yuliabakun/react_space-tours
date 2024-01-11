@@ -1,12 +1,14 @@
 import React from 'react';
+import './App.scss';
+import { Header } from '../components/templates/Header';
 import { Outlet } from 'react-router-dom';
 
-export const App = () => {
+export const App: React.FC = () => {
   return (
     <div className="App">
-      <h1>My react app</h1>
+      <Header />
 
       <Outlet />
     </div>
   );
-}
+};

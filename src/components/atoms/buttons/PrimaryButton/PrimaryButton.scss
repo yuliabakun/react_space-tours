@@ -1,0 +1,13 @@
+@import '../../../../shared/styles/variables.scss';
+
+.base-button {
+  width: 100%;
+  padding-block: 12px;
+  background-color: $light-blue;
+  cursor: pointer;
+
+  font-family: 'Syne';
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
