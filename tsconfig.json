@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "types": ["babel__generator"],
     "target": "es5",
     "lib": [
       "dom",
