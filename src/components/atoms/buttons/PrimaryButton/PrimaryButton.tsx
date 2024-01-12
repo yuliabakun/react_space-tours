@@ -1,20 +1,17 @@
 import React from 'react';
-import './PrimaryButton.scss';
+import styles from './PrimaryButton.module.scss';
 
 type Props = {
   title: string,
-  onClick: () => void,
 };
 
 export const PrimaryButton: React.FC<Props> = ({
   title,
-  onClick,
 }) => {
   return (
     <button
       type="button"
-      className="base-button"
-      onClick={onClick}
+      className={styles.button}
     >
       {title}
     </button>

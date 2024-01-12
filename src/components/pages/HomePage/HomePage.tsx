@@ -1,14 +1,12 @@
-import { Banner } from '../../templates/Banner';
-import './HomePage.scss';
+import { BackgroundSlider } from '../../templates/BackgroundSlider';
+import { CardsSlider } from '../../templates/CardsSlider';
 
 export const HomePage = () => {
   return (
     <>
-      <div className="bg-container" />
+      <BackgroundSlider />
 
-      <div className="homepage">
-        <Banner />
-      </div>
+      <CardsSlider />
     </>
   );
 };
