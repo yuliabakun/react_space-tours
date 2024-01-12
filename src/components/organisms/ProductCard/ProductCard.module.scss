@@ -3,28 +3,50 @@
 .card {
   display: flex;
   flex-direction: column;
-  min-height: 572px;
+  justify-content: space-between;
+  width: 100%;
   height: 100%;
-  width: 410px;
   border: 1px solid $light-blue;
 }
 
 .image {
-  width: 100%;
   height: 300px;
-
-  margin-bottom: 26px;
+  margin-bottom: 28px;
 }
 
 .image__item {
+  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
 .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
   margin-bottom: 64px;
+  overflow-y: auto;
+
+  &__title {
+    color: #1E1E1E;
+    font-family: 'Syne';
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__desc {
+    flex: 1;
+    color: #556B84;
+    text-align: center;
+    font-family: 'Lato';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+  }
 }
 
 .controls {
@@ -34,5 +56,18 @@
   &__button {
     width: 80%;
     margin-right: 16px;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &__icon {
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
 }

@@ -1,23 +1,30 @@
 import styles from './ProductCard.module.scss';
-import image1 from '../../../shared/images/image_1.png';
 import { PrimaryButton } from '../../atoms/buttons/PrimaryButton';
 import { IconButton } from '../../atoms/buttons/IconButton';
 import iconHeart from '../../../shared/icons/heart.svg';
+import { Tour } from '../../../shared/types/Tour';
 
-export const ProductCard = () => {
+type Props = {
+  item: Tour;
+  image: string,
+}
+
+export const ProductCard: React.FC<Props> = ({ item, image }) => {
   return (
     <article className={styles.card}>
       <div className={styles.image}>
         <img
           className={styles.image__item}
-          src={image1}
+          src={image}
           alt="alt"
         ></img>
       </div>
 
       <div className={styles.info}>
-        <p className={styles.info__title}>Title</p>
-        <p className={styles.info__desc}>Desjkdgherklsvbqejknadfh</p>
+        <p className={styles.info__title}>{item.mission_name}</p>
+        <p className={styles.info__desc}>
+          {item.details || 'no description'}
+        </p>
       </div>
 
       <div className={styles.controls}>
@@ -27,11 +34,12 @@ export const ProductCard = () => {
           />
         </div>
 
-
-        <IconButton
-          iconDefault={iconHeart}
-          onClickDefault={() => { }}
-        />
+        <div className={styles.controls__icon}>
+          <IconButton
+            iconDefault={iconHeart}
+            onClickDefault={() => { }}
+          />
+        </div>
       </div>
     </article>
   );

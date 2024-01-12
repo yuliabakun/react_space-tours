@@ -2,24 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
 import Root from './app/Root';
-// import {
-//   ApolloClient,
-//   InMemoryCache,
-//   ApolloProvider,
-// } from '@apollo/client';
-
-// const client = new ApolloClient({
-//   uri: 'https://flyby-router-demo.herokuapp.com/',
-//   cache: new InMemoryCache(),
-// });
+import { ApolloProvider } from '@apollo/client';
+import client from './shared/api/client';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
+
 root.render(
-  // <ApolloProvider client={client}>
+  <ApolloProvider client={client}>
     <React.StrictMode>
       <Root />
     </React.StrictMode>
-  // </ApolloProvider>
+  </ApolloProvider>
 );

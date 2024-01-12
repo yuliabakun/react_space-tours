@@ -1,0 +1,77 @@
+@import '../../../shared/styles/variables.scss';
+
+.slick-list {
+  padding: 0 -10px;
+}
+
+.slick-slide {
+  padding: 20px 10px;
+  height: auto;
+}
+
+.slick-track {
+  display: flex;
+  height: 600px;
+}
+
+.slider-container {
+  height: 600px;
+  margin-inline: 30px;
+  margin-bottom: 150px;
+
+  &__title {
+    margin-left: 10px;
+
+    color: #1E1E1E;
+    font-family: 'Syne';
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}
+
+// styles to expand all items inside slick-container
+// to the size of slick-slide div
+div.slick-slide>div {
+  height: 100%;
+  width: 100%;
+}
+
+.arrow {
+  position: absolute;
+  top: -63px;
+  right: 10px;
+  z-index: 1;
+  cursor: pointer;
+  border: 1px solid black;
+
+  &:hover {
+    border: 1px solid black;
+  }
+
+  &-left {
+    width: 34px;
+    height: 34px;
+    right: 60px;
+    background-color: $light-gray;
+    background-image: url('../../../shared/icons/arrow-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0px;
+  }
+
+  &-right {
+    width: 34px;
+    height: 34px;
+    background-image: url('../../../shared/icons/arrow-right.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $light-gray;
+    border: 0px;
+  }
+}
+
+.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}

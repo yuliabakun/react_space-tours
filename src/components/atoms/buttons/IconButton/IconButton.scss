@@ -1,6 +1,9 @@
 @import '../../../../shared/styles/variables.scss';
 
 .icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 53px;
   min-width: 53px;
   cursor: pointer;
