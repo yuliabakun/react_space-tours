@@ -16,4 +16,4 @@ export const PrimaryButton: React.FC<Props> = ({
       {title}
     </button>
   );
-}
+};

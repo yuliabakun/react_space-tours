@@ -1,5 +1,9 @@
+import { MockPage } from '../../templates/MockPage';
+
 export const DevelopmentPage = () => {
   return (
-    <h1>devpage</h1>
+    <MockPage
+      pageTitle="page is not ready yet"
+    />
   );
 };

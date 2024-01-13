@@ -2,7 +2,6 @@ import './ExploreTours.scss';
 import arrowDown from '../../../../shared/icons/arrow-down.svg';
 
 export const ExploreTours = () => {
-
   const handleScrollDown = () => {
     const scrollPosition = window.innerHeight;
 

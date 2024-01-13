@@ -1,6 +1,5 @@
 import classNames from "classnames";
 
-
 interface ArrowProps {
   onClick?: () => void;
   isDisabled: boolean;
@@ -13,4 +12,4 @@ export function SamplePrevArrow(props: ArrowProps) {
   return (
     <div onClick={isDisabled ? undefined : onClick} className={classes} />
   );
-}
+};

@@ -20,9 +20,9 @@ export const HeaderButtonsBar: React.FC = () => {
       <div className={styles.bar__icon}>
         <IconButton
           isActive={isFavouritesPage}
-          onClickDefault={navigateToFavourites}
-          iconDefault={iconHeart}
           iconActive={iconHeartWhite}
+          iconDefault={iconHeart}
+          onClickDefault={navigateToFavourites}
         />
       </div>
 
@@ -32,5 +32,5 @@ export const HeaderButtonsBar: React.FC = () => {
         />
       </div>
     </div>
-  )
+  );
 };

@@ -20,10 +20,13 @@ export const IconButton: React.FC<Props> = ({
   return (
     <button
       type="button"
-      className={cn('icon-button', { 'icon-button--active' : isActive })}
+      className={cn('icon-button', { 'icon-button--active': isActive })}
       onClick={isActive ? onClickActive : onClickDefault}
     >
-      <img src={isActive ? iconActive : iconDefault} alt="button icon" color='white' />
+      <img
+        src={isActive ? iconActive : iconDefault}
+        alt="button icon"
+      />
     </button>
   );
 }

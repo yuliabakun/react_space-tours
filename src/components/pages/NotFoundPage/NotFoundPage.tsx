@@ -1,5 +1,9 @@
+import { MockPage } from "../../templates/MockPage";
+
 export const NotFoundPage = () => {
-  return(
-    <h1>Sorry, page not found, redirect to Home page</h1>
+  return (
+    <MockPage
+      pageTitle="sorry, page not found"
+    />
   );
 };

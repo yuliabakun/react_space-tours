@@ -1,0 +1,19 @@
+.mock {
+  height: 100vh;
+
+  &__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../../../shared/images/banner_2.png');
+    background-position: center;
+    height: 100%;
+
+
+    color: #FFF;
+    font-family: Syne;
+    font-size: 28px;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+}

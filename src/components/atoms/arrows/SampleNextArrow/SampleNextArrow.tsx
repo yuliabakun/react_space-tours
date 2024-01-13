@@ -12,4 +12,4 @@ export function SampleNextArrow(props: ArrowProps) {
   return (
     <div onClick={isDisabled ? undefined : onClick} className={classes} />
   );
-}
+};
