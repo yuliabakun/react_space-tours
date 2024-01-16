@@ -1,36 +1,31 @@
+import { useState, useEffect } from 'react';
 import './BackgroundSlider.scss';
-import image1 from '../../../shared/images/banner_1.png';
-import image2 from '../../../shared/images/banner_2.png';
-import image3 from '../../../shared/images/banner_3.png';
-import { useEffect, useState } from 'react';
+import { bannerFiles } from '../../../shared/images/ImagesArray';
 import { Banner } from '../../organisms/Banner';
-
-const images = [
-  { id: 1, src: image1 },
-  { id: 2, src: image2 },
-  { id: 3, src: image3 },
-];
 
 export const BackgroundSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  const nextSlide = () => {
+    setActiveIndex((prevIndex) =>
+      prevIndex === bannerFiles.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
+    const interval = setInterval(nextSlide, 5000);
 
-    return () => clearInterval(intervalId);
-
+    return () => clearInterval(interval);
   }, []);
 
   return (
-    <section className="slider">
-      {images.map(({ id, src }, index) => (
+    <section className="home">
+      {bannerFiles.map(({ id, src, alt }, index) => (
         <img
           key={id}
-          className={`img-slide ${index === activeIndex ? 'active' : ''}`}
           src={src}
-          alt={String(id)}
+          className={`img-slide ${index === activeIndex ? 'active' : ''}`}
+          alt={alt}
         />
       ))}
 

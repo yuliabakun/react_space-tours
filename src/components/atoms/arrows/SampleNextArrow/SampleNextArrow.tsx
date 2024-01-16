@@ -1,9 +1,5 @@
 import cn from 'classnames';
-
-interface ArrowProps {
-  onClick?: () => void;
-  isDisabled: boolean;
-}
+import { ArrowProps } from '../../../../shared/types/ArrowProps';
 
 export function SampleNextArrow(props: ArrowProps) {
   const { onClick, isDisabled } = props;

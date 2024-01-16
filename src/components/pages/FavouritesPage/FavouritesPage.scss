@@ -1,9 +1,21 @@
+@import '../../../shared/styles/mixin.scss';
+@import '../../../shared/styles/variables.scss';
+
 .favpage-cards {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  margin-inline: 80px;
+  margin-inline: 30px;
   margin-bottom: 150px;
+
+  @include onTablet {
+    grid-template-columns: repeat(8, 1fr);
+  }
+
+  @include onDesktop {
+    grid-template-columns: repeat(12, 1fr);
+    margin-inline: 80px;
+  }
 }
 
 .favpage-image {
@@ -15,14 +27,15 @@
 
 .favpage-title {
   margin-top: 205px;
-  color: #FFF;
+  color: $white;
   text-align: center;
-  font-family: Syne;
-  font-size: 48px;
-  font-style: normal;
+  font-size: 28px;
   font-weight: 800;
-  line-height: normal;
   text-transform: uppercase;
+
+  @include onTablet {
+    font-size: 48px;
+  }
 }
 
 .favpage-clear {
@@ -32,10 +45,14 @@
   margin-bottom: 40px;
 
   &__button {
-    color: #556B84;
+    color: $blue-gray;
     font-family: 'Lato';
     font-size: 24px;
-    background-color: #FFF;
+    background-color: $white;
     cursor: pointer;
+
+    &:hover {
+      color: $black;
+    }
   }
 }

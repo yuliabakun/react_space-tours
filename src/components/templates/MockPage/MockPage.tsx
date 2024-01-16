@@ -11,7 +11,7 @@ export const MockPage: React.FC<Props> = ({
   return (
     <div className="mock">
       <div className="mock__image">
-        {pageTitle}
+        <h3 className="mock__image__text">{pageTitle}</h3>
       </div>
     </div>
   );

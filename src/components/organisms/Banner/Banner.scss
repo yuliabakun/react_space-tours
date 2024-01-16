@@ -1,28 +1,49 @@
 @import '../../../shared/styles/variables.scss';
+@import '../../../shared/styles/mixin.scss';
 
 .banner {
-  margin-top: 105px;
-  z-index: 99;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 999;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding-bottom: 20px;
+  padding-top: 200px;
+
+  @include onTablet {
+    padding-top: 250px;
+  }
+
+  @include onDesktop {
+    padding-top: 220px;
+  }
 
   &__text {
     color: $white;
-    font-family: 'Syne';
-    font-size: 31px;
+    font-size: 15px;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
+
+    @include onTablet {
+      font-size: 25px;
+    }
   }
 
   &__fulltext {
     color: $white;
-    font-family: 'Syne';
-    font-size: 200px;
+    font-size: 100px;
     font-weight: 800;
     text-transform: uppercase;
     text-align: center;
+
+    @include onTablet {
+      font-size: 170px;
+      line-height: 180px;
+    }
   }
 }
