@@ -1,22 +1,48 @@
-.slider {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
+@import '../../../shared/styles/mixin.scss';
+
+.home {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(30, 30, 30, 0.48);
   margin-bottom: 100px;
 }
 
-.img-slide {
+.home:before {
+  content: '';
   position: absolute;
-  object-fit: cover;
+  background: rgba(251, 3, 3, 0.034);
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 777;
+}
+
+.home .banner {
+  z-index: 888;
+}
+
+.home img {
+  z-index: 000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-slide{
+  position: absolute;
+  width: 100%;
   clip-path: circle(0% at 0 50%);
 }
 
-.img-slide.active {
+.img-slide.active{
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
   transition-property: clip-path;

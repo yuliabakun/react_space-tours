@@ -1,13 +1,9 @@
 import { useRecoilValue, useSetRecoilState } from "recoil";
 import { favouritesState } from "../../../shared/stateManager/favouritesState";
+import { imageFiles } from "../../../shared/images/ImagesArray";
 import { ProductCard } from "../../organisms/ProductCard";
 import { Tour } from "../../../shared/types/Tour";
 import './FavouritesPage.scss';
-
-import image1 from '../../../shared/images/image_1.png';
-import image2 from '../../../shared/images/image_2.png';
-import image3 from '../../../shared/images/image_3.png';
-const images = [image1, image2, image3];
 
 export const FavouritesPage = () => {
   const favouriteItems = useRecoilValue(favouritesState);
@@ -38,7 +34,7 @@ export const FavouritesPage = () => {
           <ProductCard
             key={item.id}
             item={item}
-            image={images[index % images.length]}
+            image={imageFiles[index % imageFiles.length]}
           />
         ))}
       </div>

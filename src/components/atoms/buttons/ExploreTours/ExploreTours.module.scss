@@ -1,0 +1,23 @@
+@import '../../../../shared/styles/variables.scss';
+
+.button {
+  display: flex;
+  align-items: center;
+  background: transparent;
+  cursor: pointer;
+
+  &__text {
+    font-family: 'Lato';
+    font-size: 32px;
+    color: $white;
+    text-shadow: $black 0px 0px 2px;
+  }
+
+  &__arrow {
+    background-image: url('../../../../shared/icons/arrow-down.svg');
+    background-position: center;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+  }
+}

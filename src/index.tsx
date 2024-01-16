@@ -4,7 +4,7 @@ import './index.scss';
 import Root from './app/Root';
 import { RecoilRoot } from 'recoil';
 import { ApolloProvider } from '@apollo/client';
-import client from './shared/api/client';
+import { client } from './shared/api/client';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

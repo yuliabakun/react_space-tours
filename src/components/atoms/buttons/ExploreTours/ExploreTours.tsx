@@ -1,5 +1,4 @@
-import './ExploreTours.scss';
-import arrowDown from '../../../../shared/icons/arrow-down.svg';
+import styles from './ExploreTours.module.scss';
 
 export const ExploreTours = () => {
   const handleScrollDown = () => {
@@ -14,14 +13,14 @@ export const ExploreTours = () => {
   return (
     <button
       type="button"
-      className="explore-tours-button"
+      className={styles.button}
       onClick={handleScrollDown}
     >
-      <span className="explore-tours-button__text">
+      <span className={styles.button__text}>
         Explore Tours
       </span>
 
-      <img src={arrowDown} alt="arrow down" />
+      <div className={styles.button__arrow} />
     </button>
   );
 };

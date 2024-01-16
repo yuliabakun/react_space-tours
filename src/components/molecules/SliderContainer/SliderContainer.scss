@@ -1,40 +1,23 @@
 @import '../../../shared/styles/variables.scss';
-
-.slick-list {
-  padding: 0 -10px;
-}
+@import '../../../shared/styles/mixin.scss';
 
 .slick-slide {
   padding: 20px 10px;
-  height: auto;
-}
-
-.slick-track {
-  display: flex;
-  height: 600px;
 }
 
 .slider-container {
-  height: 600px;
-  margin-inline: 30px;
-  margin-bottom: 150px;
+  margin: 0 30px 150px 30px;
 
   &__title {
-    margin-left: 10px;
-
-    color: #1E1E1E;
-    font-family: 'Syne';
-    font-size: 32px;
+    margin-bottom: 30px;
+    font-size: 20px;
     font-weight: 800;
     text-transform: uppercase;
-  }
-}
 
-// styles to expand all items inside slick-container
-// to the size of slick-slide div
-div.slick-slide>div {
-  height: 100%;
-  width: 100%;
+    @include onDesktop {
+      font-size: 32px;
+    }
+  }
 }
 
 .arrow {
@@ -43,10 +26,10 @@ div.slick-slide>div {
   right: 10px;
   z-index: 1;
   cursor: pointer;
-  border: 1px solid black;
+  border: 1px solid $black;
 
   &:hover {
-    border: 1px solid black;
+    border: 1px solid $black;
   }
 
   &-left {
@@ -71,7 +54,32 @@ div.slick-slide>div {
   }
 }
 
-.disabled {
-  opacity: 0.4;
-  pointer-events: none;
+.slick-dots.slick-thumb li {
+  width: 20px; 
+  height: 20px; 
+  margin: 0 3px;
+  border: 2px solid $black;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+  will-change: width;
+  background-color: $white;
+  position: relative;
+}
+
+.slick-dots.slick-thumb li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.slick-dots.slick-thumb li.slick-active::before {
+  opacity: 1; 
 }

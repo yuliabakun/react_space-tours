@@ -1,3 +1,6 @@
+@import '../../../shared/styles/mixin.scss';
+@import '../../../shared/styles/variables.scss';
+
 .mock {
   height: 100vh;
 
@@ -9,11 +12,16 @@
     background-position: center;
     height: 100%;
 
+    &__text {
+      color: $white;
+      font-size: 18px;
+      font-weight: 800;
+      text-transform: uppercase;
+      text-align: center;
 
-    color: #FFF;
-    font-family: Syne;
-    font-size: 28px;
-    font-weight: 800;
-    text-transform: uppercase;
+      @include onTablet {
+        font-size: 28px;
+      }
+    }
   }
 }

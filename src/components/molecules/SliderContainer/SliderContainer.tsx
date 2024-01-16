@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
-import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css';
 import './SliderContainer.scss';
+import Slider from 'react-slick';
 import { SamplePrevArrow } from '../../atoms/arrows/SamplePrevArrow';
 import { SampleNextArrow } from '../../atoms/arrows/SampleNextArrow';
 
@@ -25,6 +25,33 @@ export const SliderContainer: React.FC<Props> = ({
     initialSlide: 0,
     prevArrow: <SamplePrevArrow isDisabled={false} onClick={() => { }} />,
     nextArrow: <SampleNextArrow isDisabled={false} onClick={() => { }} />,
+    customPaging: function (i: number) {
+      return <div className="dot"></div>;
+    },
+    dotsClass: "slick-dots slick-thumb",
+    responsive: [
+      {
+        breakpoint: 1100,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 850,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 560,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   return (

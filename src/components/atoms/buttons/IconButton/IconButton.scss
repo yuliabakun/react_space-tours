@@ -1,14 +1,20 @@
 @import '../../../../shared/styles/variables.scss';
+@import '../../../../shared/styles/mixin.scss';
 
 .icon-button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 53px;
-  min-width: 53px;
+  height: 40px;
+  min-width: 40px;
   cursor: pointer;
 
   &--active {
     background-color: $accent-pink;
+  }
+
+  @include onTablet {
+    height: 53px;
+    min-width: 53px;
   }
 }

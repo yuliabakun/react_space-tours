@@ -6,15 +6,16 @@ import iconDelete from '../../../shared/icons/delete.svg';
 import { Tour } from '../../../shared/types/Tour';
 import { useRecoilValue, useSetRecoilState } from 'recoil';
 import { favouritesState } from '../../../shared/stateManager/favouritesState';
+import { Image } from '../../../shared/types/Image';
 
 type Props = {
   item: Tour;
-  image: string,
+  image: Image,
 }
 
 export const ProductCard: React.FC<Props> = ({ item, image }) => {
-  const setFavourite = useSetRecoilState(favouritesState);
   const favItems = useRecoilValue(favouritesState);
+  const setFavourite = useSetRecoilState(favouritesState);
 
   const addItem = () => {
     setFavourite((oldFavourites) => [
@@ -29,33 +30,36 @@ export const ProductCard: React.FC<Props> = ({ item, image }) => {
     });
   };
 
+  const isCardInFav = () => favItems.some((favItem) => favItem.id === item.id);
+
   return (
     <article className={styles.card}>
-      <div className={styles.image}>
+      <div className={styles.top}>
         <img
-          className={styles.image__item}
-          src={image}
-          alt="alt"
-        ></img>
+          className={styles.image}
+          src={image.src}
+          alt={image.alt}
+        />
+
+        <h3 className={styles.title}>
+          {item.mission_name}
+        </h3>
       </div>
 
       <div className={styles.info}>
-        <p className={styles.info__title}>{item.mission_name}</p>
-        <p className={styles.info__desc}>
+        <div className={styles.description}>
           {item.details || 'no description'}
-        </p>
-      </div>
-
-      <div className={styles.controls}>
-        <div className={styles.controls__button}>
-          <PrimaryButton
-            title="buy"
-          />
         </div>
 
-        <div className={styles.controls__icon}>
+        <div className={styles.controls}>
+          <div className={styles.button}>
+            <PrimaryButton
+              title="buy"
+            />
+          </div>
+
           <IconButton
-            isActive={favItems.some((favItem) => favItem.id === item.id)}
+            isActive={isCardInFav()}
             iconDefault={iconHeart}
             iconActive={iconDelete}
             onClickDefault={addItem}
