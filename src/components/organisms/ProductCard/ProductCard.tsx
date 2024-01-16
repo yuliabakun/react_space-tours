@@ -1,6 +1,6 @@
 import styles from './ProductCard.module.scss';
-import { PrimaryButton } from '../../atoms/buttons/PrimaryButton';
-import { IconButton } from '../../atoms/buttons/IconButton';
+import { PrimaryButton } from '../../atoms/PrimaryButton';
+import { IconButton } from '../../atoms/IconButton';
 import iconHeart from '../../../shared/icons/heart.svg';
 import iconDelete from '../../../shared/icons/delete.svg';
 import { Tour } from '../../../shared/types/Tour';

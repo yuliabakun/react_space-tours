@@ -3,8 +3,8 @@ import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css';
 import './SliderContainer.scss';
 import Slider from 'react-slick';
-import { SamplePrevArrow } from '../../atoms/arrows/SamplePrevArrow';
-import { SampleNextArrow } from '../../atoms/arrows/SampleNextArrow';
+import { SamplePrevArrow } from '../../atoms/SamplePrevArrow';
+import { SampleNextArrow } from '../../atoms/SampleNextArrow';
 
 type Props = {
   children: ReactNode;

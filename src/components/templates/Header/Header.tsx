@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.scss';
-import { Logo } from '../../atoms/logo/Logo';
+import { Logo } from '../../atoms/Logo';
 import { NavBar } from '../../organisms/NavBar';
 import { HeaderButtonsBar } from '../../molecules/HeaderButtonsBar';
 

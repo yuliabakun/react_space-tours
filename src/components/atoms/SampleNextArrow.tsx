@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { ArrowProps } from '../../../../shared/types/ArrowProps';
+import { ArrowProps } from '../../shared/types/ArrowProps';
 
 export function SampleNextArrow(props: ArrowProps) {
   const { onClick, isDisabled } = props;

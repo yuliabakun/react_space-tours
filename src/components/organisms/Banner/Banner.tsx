@@ -1,5 +1,5 @@
-import './Banner.scss'
-import { ExploreTours } from "../../atoms/buttons/ExploreTours";
+import './Banner.scss';
+import { ExploreTours } from "../../atoms/ExploreTours";
 
 export const Banner = () => {
   return (
