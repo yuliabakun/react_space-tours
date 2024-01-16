@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_space-tours/static/css/main.e3d22ca4.css",
-    "main.js": "/react_space-tours/static/js/main.14a8e475.js",
+    "main.css": "/react_space-tours/static/css/main.625836f2.css",
+    "main.js": "/react_space-tours/static/js/main.f4179fa2.js",
     "static/media/banner_2.png": "/react_space-tours/static/media/banner_2.676ff1ce29b6c11da14b.png",
     "static/media/logo.svg": "/react_space-tours/static/media/logo.016a3ed7a6f4dde6c00bcc575aa95fa1.svg",
     "static/media/banner_1.png": "/react_space-tours/static/media/banner_1.115fc2797b589063fe3c.png",
@@ -17,14 +17,14 @@
     "static/media/slick.woff": "/react_space-tours/static/media/slick.295183786cd8a1389865.woff",
     "static/media/delete.svg": "/react_space-tours/static/media/delete.20eb7cd81bf145d7311399f4cf592ae5.svg",
     "index.html": "/react_space-tours/index.html",
-    "static/media/arrow-down.svg": "/react_space-tours/static/media/arrow-down.e5c4e12cef24294442cd9473bd2d4020.svg",
+    "static/media/arrow-down.svg": "/react_space-tours/static/media/arrow-down.e5c4e12cef24294442cd.svg",
     "static/media/arrow-left.svg": "/react_space-tours/static/media/arrow-left.1a2d12b10c3b6c8fa0f4.svg",
     "static/media/arrow-right.svg": "/react_space-tours/static/media/arrow-right.68aa568982998a6d5078.svg",
-    "main.e3d22ca4.css.map": "/react_space-tours/static/css/main.e3d22ca4.css.map",
-    "main.14a8e475.js.map": "/react_space-tours/static/js/main.14a8e475.js.map"
+    "main.625836f2.css.map": "/react_space-tours/static/css/main.625836f2.css.map",
+    "main.f4179fa2.js.map": "/react_space-tours/static/js/main.f4179fa2.js.map"
   },
   "entrypoints": [
-    "static/css/main.e3d22ca4.css",
-    "static/js/main.14a8e475.js"
+    "static/css/main.625836f2.css",
+    "static/js/main.f4179fa2.js"
   ]
 }
