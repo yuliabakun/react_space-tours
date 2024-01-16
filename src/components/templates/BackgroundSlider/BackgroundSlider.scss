@@ -1,8 +1,10 @@
 @import '../../../shared/styles/mixin.scss';
+@import '../../../shared/styles/variables.scss';
 
 .home {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
   position: relative;
   width: 100%;
@@ -46,4 +48,47 @@
   clip-path: circle(150% at 0 50%);
   transition: 2s ease;
   transition-property: clip-path;
+}
+
+.slider-navigation {
+  z-index: 999;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-navigation .nav-btn {
+  width: 24px;
+  height: 24px;
+  background: transparent;
+  border: 2px solid $white;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: relative;
+}
+
+.slider-navigation .nav-btn.active {
+  background: transparent;
+}
+
+.slider-navigation .nav-btn.active::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: $white;
+  border-radius: 50%;
+}
+
+.slider-navigation .nav-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.slider-navigation .nav-btn:hover {
+  border-color: $blue-gray;
 }

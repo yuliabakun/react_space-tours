@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 import './BackgroundSlider.scss';
 import { bannerFiles } from '../../../shared/images/ImagesArray';
 import { Banner } from '../../organisms/Banner';
+import { ExploreTours } from '../../atoms/ExploreTours';
+import { SliderNavigation } from '../../molecules/SliderNavigation/SliderNavigation';
 
 export const BackgroundSlider = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -10,6 +12,10 @@ export const BackgroundSlider = () => {
     setActiveIndex((prevIndex) =>
       prevIndex === bannerFiles.length - 1 ? 0 : prevIndex + 1
     );
+  };
+
+  const goToSlide = (index: number) => {
+    setActiveIndex(index);
   };
 
   useEffect(() => {
@@ -29,7 +35,15 @@ export const BackgroundSlider = () => {
         />
       ))}
 
+      <SliderNavigation
+        slides={bannerFiles}
+        activeIndex={activeIndex}
+        onSlideClick={goToSlide}
+      />
+
       <Banner />
+
+      <ExploreTours />
     </section>
   );
 };

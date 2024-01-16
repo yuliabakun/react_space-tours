@@ -25,9 +25,6 @@ export const SliderContainer: React.FC<Props> = ({
     initialSlide: 0,
     prevArrow: <SamplePrevArrow isDisabled={false} onClick={() => { }} />,
     nextArrow: <SampleNextArrow isDisabled={false} onClick={() => { }} />,
-    customPaging: function (i: number) {
-      return <div className="dot"></div>;
-    },
     dotsClass: "slick-dots slick-thumb",
     responsive: [
       {

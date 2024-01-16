@@ -2,25 +2,14 @@
 @import '../../../shared/styles/mixin.scss';
 
 .banner {
-  height: 100vh;
   width: 100%;
   position: absolute;
-  top: 0;
-  z-index: 999;
+  top: 25%;
+  z-index: 888;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top: 200px;
-
-  @include onTablet {
-    padding-top: 250px;
-  }
-
-  @include onDesktop {
-    padding-top: 220px;
-  }
 
   &__text {
     color: $white;
@@ -42,8 +31,7 @@
     text-align: center;
 
     @include onTablet {
-      font-size: 170px;
-      line-height: 180px;
+      font-size: 200px;
     }
   }
 }

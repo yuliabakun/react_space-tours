@@ -7,6 +7,9 @@ const StyledButton = styled.button`
   align-items: center;
   background: transparent;
   cursor: pointer;
+  z-index: 999;
+  position: absolute;
+  bottom: 30px;
 `;
 
 const StyledText = styled.span`
