@@ -19,4 +19,5 @@ You can check out the live [DEMO](https://yuliabakun.github.io/react_space-tours
 * React: A JavaScript library for building user interfaces.
 * Typescript: A superset of JavaScript that adds static typing to the language.
 * React Apollo: A library for performing GraphQL operations in React applications.
+* Recoil: A state management library for React applications.
 * Atomic Design Pattern: An approach to design that breaks down components into atoms, molecules, organisms, templates, and pages.
