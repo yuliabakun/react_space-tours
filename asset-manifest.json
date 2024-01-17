@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/react_space-tours/static/css/main.b102e19c.css",
-    "main.js": "/react_space-tours/static/js/main.1a59c326.js",
-    "static/media/banner_3.png": "/react_space-tours/static/media/banner_3.7a6c5209e5fc75cc24d1.png",
+    "main.css": "/react_space-tours/static/css/main.045038bf.css",
+    "main.js": "/react_space-tours/static/js/main.156e1b4e.js",
+    "static/media/banner_2.png": "/react_space-tours/static/media/banner_2.7a6c5209e5fc75cc24d1.png",
     "static/media/logo.svg": "/react_space-tours/static/media/logo.016a3ed7a6f4dde6c00bcc575aa95fa1.svg",
     "static/media/banner_1.png": "/react_space-tours/static/media/banner_1.847744a5582d77ded191.png",
-    "static/media/banner_2.png": "/react_space-tours/static/media/banner_2.5a04e92017c0ac32e3d8.png",
+    "static/media/banner_3.png": "/react_space-tours/static/media/banner_3.5a04e92017c0ac32e3d8.png",
     "static/media/image_2.png": "/react_space-tours/static/media/image_2.c59de459b994c5b66e1e.png",
     "static/media/image_1.png": "/react_space-tours/static/media/image_1.62ec5a1ee0b38c4f9bf9.png",
     "static/media/image_3.png": "/react_space-tours/static/media/image_3.6784922a9ce0c8e74cd4.png",
@@ -20,11 +20,11 @@
     "static/media/arrow-down.svg": "/react_space-tours/static/media/arrow-down.e5c4e12cef24294442cd9473bd2d4020.svg",
     "static/media/arrow-left.svg": "/react_space-tours/static/media/arrow-left.1a2d12b10c3b6c8fa0f4.svg",
     "static/media/arrow-right.svg": "/react_space-tours/static/media/arrow-right.68aa568982998a6d5078.svg",
-    "main.b102e19c.css.map": "/react_space-tours/static/css/main.b102e19c.css.map",
-    "main.1a59c326.js.map": "/react_space-tours/static/js/main.1a59c326.js.map"
+    "main.045038bf.css.map": "/react_space-tours/static/css/main.045038bf.css.map",
+    "main.156e1b4e.js.map": "/react_space-tours/static/js/main.156e1b4e.js.map"
   },
   "entrypoints": [
-    "static/css/main.b102e19c.css",
-    "static/js/main.1a59c326.js"
+    "static/css/main.045038bf.css",
+    "static/js/main.156e1b4e.js"
   ]
 }
