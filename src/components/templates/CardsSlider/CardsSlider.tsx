@@ -9,7 +9,7 @@ import { SliderContainer } from '../../molecules/SliderContainer';
 export const CardsSlider: React.FC = () => {
   const { data } = useQuery(GET_TOURS, {
     variables: {
-      toursLimit: 20,
+      toursLimit: 10,
     }
   });
   const launches = data?.launches || [];
